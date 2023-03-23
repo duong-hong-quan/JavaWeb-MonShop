@@ -1,6 +1,6 @@
 # Welcome to JavaWeb-MonShop Repository
 
-##Screen-shots
+## Screen-shots
 ![Home Page](https://github.com/duong-hong-quan/JavaWeb-MonShop/blob/main/screenshot/homepage.png)
 ![Product Detail](https://github.com/duong-hong-quan/JavaWeb-MonShop/blob/main/screenshot/detail.png)
 ![Code demo](https://github.com/duong-hong-quan/JavaWeb-MonShop/blob/main/screenshot/code.png)
