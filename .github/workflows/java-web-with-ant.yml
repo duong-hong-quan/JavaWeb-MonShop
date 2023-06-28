@@ -20,7 +20,15 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '8.0'
-
+        distribution: adopt
+        java-package: jdk
+        architecture: x64
+        check-latest: false
+        server-id: github
+        server-username: ${{ github.actor }}
+        server-password: ${{ secrets.GITHUB_TOKEN }}
+        overwrite-settings: true
+        job-status: success
     - name: Set up Ant
       run: sudo apt-get install ant
 
