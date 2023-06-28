@@ -8,7 +8,6 @@ package quandh.roles;
 import java.io.Serializable;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class RoleDTO implements Serializable {
@@ -50,7 +49,5 @@ public class RoleDTO implements Serializable {
         return "RoleDTO{" + "id=" + id + ", role=" + role + '}';
     }
 
-   
-    
-    
+
 }

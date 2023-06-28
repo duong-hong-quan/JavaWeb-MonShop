@@ -5,16 +5,16 @@
  */
 package quandh.ordertatuses;
 
+import quandh.util.DBHelper;
+
+import javax.naming.NamingException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import javax.naming.NamingException;
-import quandh.util.DBHelper;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class OrderStatusesDAO {

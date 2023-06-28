@@ -12,6 +12,7 @@ body {
     background-color: rgb(245, 249, 252);
     border-left: 1px solid #ccc;
 }
+
 .header__admin {
     width: 100%;
     display: flex;
@@ -20,17 +21,21 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
 .rounded-circle {
     border-radius: 50%;
 }
+
 .img-table {
     width: 50px;
     height: 50px;
 }
+
 .user {
     padding: 20px 25px;
     font-size: 3rem;
 }
+
 .bar-icon,
 .closebar-icon {
     margin-top: 20px;
@@ -49,6 +54,7 @@ body {
     margin-top: 2rem;
     justify-content: flex-start;
 }
+
 .navbar-component {
     width: 100%;
     padding: 0;
@@ -65,14 +71,17 @@ body {
     padding: 10px;
     /* width: 100%; */
 }
+
 .navbar__link p {
     margin: 0;
     display: inline-block;
     font-size: 1.6rem;
 }
+
 .navbar__link p:hover {
     color: #706f6f;
 }
+
 .navbar__link:hover {
     text-decoration: none;
 
@@ -85,9 +94,11 @@ body {
     font-size: 1.6rem;
     margin-right: 10px;
 }
+
 .navbar__link__logout {
     display: none;
 }
+
 .shoptitle {
     background-color: white;
     width: 100%;
@@ -100,6 +111,7 @@ body {
 .shoptitleh3 {
     font-size: 3rem;
 }
+
 .shoptitle-item {
     display: flex;
     justify-content: flex-end;
@@ -114,13 +126,16 @@ body {
     margin: 15px 0;
     padding: 20px;
 }
+
 .dasboard__item-link {
     color: #000;
 }
+
 .dasboard__item-link:hover {
     text-decoration: none;
     color: #363535;
 }
+
 .dashboard-icon {
     font-size: 30px;
 }
@@ -141,6 +156,7 @@ body {
     background-color: rgb(30, 30, 30);
     color: white;
 }
+
 .dashboard-title {
     font-size: 1.8rem;
     font-weight: bold;
@@ -173,6 +189,7 @@ tr,
 th {
     font-size: 1.6rem;
 }
+
 .action-btn {
     width: 80px;
     border: 1px solid #ccc !important;
@@ -187,16 +204,20 @@ th {
     color: black !important;
     cursor: pointer !important;
 }
+
 .pagination {
     font-size: 1.6rem;
 }
+
 .page-link {
     color: #000 !important;
 }
+
 .shoptitle-btn {
     display: flex;
     justify-content: space-between;
 }
+
 .search {
     display: flex;
     justify-content: flex-end;
@@ -221,6 +242,7 @@ th {
     padding: 10px 10px;
     border-radius: 5px;
 }
+
 .search-btn:hover {
     background-color: rgb(51, 50, 50);
     color: #fff;
@@ -238,6 +260,7 @@ th {
     color: #3f3e3e !important;
     border: none;
 }
+
 .shoptitle-btn a {
     display: block;
     background-color: #000;
@@ -247,6 +270,7 @@ th {
     font-size: 1.4rem;
     border-radius: 5px;
 }
+
 .shoptitle-btn a:hover {
     text-decoration: none;
     color: #fff;
@@ -293,9 +317,11 @@ th {
     height: 40px;
     font-size: 1.6rem;
 }
+
 .input-form option {
     font-size: 1.6rem;
 }
+
 .input-form[type="text"],
 .input-form[type="password"] {
     font-size: 1.6rem;
@@ -324,13 +350,16 @@ th {
     display: flex;
     justify-content: flex-end !important;
 }
+
 .shopname {
     text-align: center;
 }
+
 .text-end {
     display: flex;
     flex-wrap: nowrap;
 }
+
 .avatar {
     display: flex;
     justify-content: center;
@@ -354,6 +383,7 @@ th {
     width: 100px;
     height: 100px;
 }
+
 .order {
     /* padding: 1% 15% 0 0; */
     padding: 20px;
@@ -361,6 +391,7 @@ th {
     border-radius: 10px;
     margin-bottom: 5%;
 }
+
 .order-container {
     padding: 5% 15%;
     /* margin: 20px auto; */
@@ -373,15 +404,18 @@ th {
     align-items: center;
     flex-wrap: nowrap;
 }
+
 .order-component {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
 }
+
 .order_item-status {
     margin: 0;
 }
+
 .status_order {
     padding: 10px 20px;
     font-size: 1.6rem;
@@ -390,6 +424,7 @@ th {
     color: #fff;
     border-radius: 5px;
 }
+
 .submitorder-btn {
     width: 100%;
     background-color: #000;
@@ -398,9 +433,11 @@ th {
     border-radius: 5px;
     color: #fff;
 }
+
 .submitorder-btn:hover {
     background-color: #3f3e3e;
 }
+
 .infouser-item {
     display: flex;
     justify-content: space-between;
@@ -410,11 +447,10 @@ th {
     padding: 0 85px 0 33px;
     font-weight: bold;
 }
+
 .infouser-item p {
     font-size: 1.6rem;
 }
-
-
 
 
 .navbar-nav {
@@ -440,16 +476,18 @@ th {
     text-decoration: none;
     /* background-color: #ccc; */
 }
-.navbar-nav__link-first{
+
+.navbar-nav__link-first {
     padding: 1rem 2rem 1rem 0;
 }
-.input-edit{
-    width:75px;
+
+.input-edit {
+    width: 75px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.input-edit-user{
+.input-edit-user {
     display: block;
     text-align: center;
     border: 1px solid #ccc;
@@ -466,9 +504,11 @@ th {
     border-radius: 10px;
 
 }
+
 .note-signup li {
     margin-bottom: 10px;
 }
+
 .note-signup li:before {
     content: "• ";
     color: red;

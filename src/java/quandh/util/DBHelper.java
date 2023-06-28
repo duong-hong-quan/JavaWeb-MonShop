@@ -13,25 +13,27 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
 /**
- *
  * @author PC_HONGQUAN
  */
-public class DBHelper implements Serializable{
-      public static Connection makeConnection() throws ClassNotFoundException, SQLException, NamingException {
+public class DBHelper implements Serializable {
+    public static Connection makeConnection() throws ClassNotFoundException, SQLException, NamingException {
         //1.Find current Context
-          Context context = new InitialContext();
+        Context context = new InitialContext();
         //2. Find Tomcat's Context
         Context tomcatContext = (Context) context.lookup("java:comp/env");
-        javax.sql.DataSource ds = (javax.sql.DataSource)tomcatContext.lookup("HongQuanDS");
+        javax.sql.DataSource ds = (javax.sql.DataSource) tomcatContext.lookup("HongQuanDS");
         Connection con = ds.getConnection();
         return con;
     }
-      
+
 //        public static Connection makeConnection() throws ClassNotFoundException, SQLException {
 //        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-//        String url = "jdbc:sqlserver://localhost:1433;databaseName=monshop;instanceName=ADMIN";
-//        Connection connection = DriverManager.getConnection(url, "sa", "123");
+//        String url = "jdbc:sqlserver://localhost:1433;databaseName=monshop;instanceName=DESKTOP-BTCG66K";
+//        Connection connection = DriverManager.getConnection(url, "sa", "12345");
 //        return connection;
 //    }
-       
+//        public static void main(String[] args) throws ClassNotFoundException, SQLException {
+//            System.out.println(DBHelper.makeConnection());
+//    }
+
 }

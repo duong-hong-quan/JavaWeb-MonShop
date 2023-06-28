@@ -5,15 +5,14 @@
  */
 package quandh.util;
 
+import javax.servlet.ServletContext;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.servlet.ServletContext;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class PropertiesFileHelper {

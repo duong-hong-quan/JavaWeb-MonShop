@@ -9,7 +9,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class Util {
@@ -21,18 +20,11 @@ public class Util {
         return formattedDate;
     }
 
-    public boolean isEmail(String input) {
-        String regex = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
-        return input.matches(regex);
-    }
-
-
     public static boolean isValidEmail(String email) {
         String regex = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
         return email.matches(regex);
     }
 
-   
     public static boolean isNumber(String str) {
         if (str == null || str.isEmpty()) {
             return false;
@@ -47,5 +39,10 @@ public class Util {
 
     public static void main(String[] args) {
         System.out.println(isNumber("10"));
+    }
+
+    public boolean isEmail(String input) {
+        String regex = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$";
+        return input.matches(regex);
     }
 }

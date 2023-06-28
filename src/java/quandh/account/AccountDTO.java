@@ -8,7 +8,6 @@ package quandh.account;
 import quandh.roles.RoleDTO;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class AccountDTO {
@@ -27,7 +26,6 @@ public class AccountDTO {
         this.password = password;
     }
 
-    
 
     public AccountDTO(String email, String password, String fullname, String address, String phonenum, RoleDTO role) {
         this.email = email;

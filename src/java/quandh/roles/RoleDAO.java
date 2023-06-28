@@ -5,16 +5,16 @@
  */
 package quandh.roles;
 
+import quandh.util.DBHelper;
+
+import javax.naming.NamingException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import javax.naming.NamingException;
-import quandh.util.DBHelper;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class RoleDAO {
@@ -28,7 +28,7 @@ public class RoleDAO {
         return roles;
     }
 
-    public ArrayList<RoleDTO> getAll() throws ClassNotFoundException, SQLException, NamingException{
+    public ArrayList<RoleDTO> getAll() throws ClassNotFoundException, SQLException, NamingException {
         Connection con = null;
         Statement stm = null;
         ResultSet rs = null;

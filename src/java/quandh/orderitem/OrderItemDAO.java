@@ -5,18 +5,18 @@
  */
 package quandh.orderitem;
 
+import quandh.products.ProductDTO;
+import quandh.util.DBHelper;
+
+import javax.naming.NamingException;
 import java.io.Serializable;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import javax.naming.NamingException;
-import quandh.products.ProductDTO;
-import quandh.util.DBHelper;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class OrderItemDAO implements Serializable {
@@ -76,5 +76,5 @@ public class OrderItemDAO implements Serializable {
         }
     }
 
-   
+
 }

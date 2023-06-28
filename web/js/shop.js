@@ -40,6 +40,7 @@ window.addEventListener("click", function (event) {
         }
     }
 });
+
 function previewImage() {
     const imgUrl = document.getElementById("img-url").value;
     const preview = document.getElementById("preview");
@@ -47,11 +48,13 @@ function previewImage() {
         preview.setAttribute("src", imgUrl);
     }
 }
+
 function openmenu() {
     mobileMenu.style.display = "block";
     baricon.style.display = "none";
     closeicon.style.display = "block";
 }
+
 function closemenu() {
     mobileMenu.style.display = "none";
     baricon.style.display = "block";
@@ -63,6 +66,7 @@ function opennavbar() {
     baricon.style.display = "none";
     closeicon.style.display = "block";
 }
+
 function closenavbar() {
     navbar.style.display = "none";
     baricon.style.display = "block";
@@ -74,6 +78,7 @@ function openfunctionnav() {
     baricon2.style.display = "none";
     closeicon2.style.display = "block";
 }
+
 function closefunctionnav() {
     shoptitlebtn.style.display = "none";
     baricon2.style.display = "block";

@@ -6,7 +6,6 @@
 package quandh.productstatuses;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class ProductStatusesDTO {

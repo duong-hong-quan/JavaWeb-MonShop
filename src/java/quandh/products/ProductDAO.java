@@ -5,20 +5,16 @@
  */
 package quandh.products;
 
-import java.io.Serializable;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import javax.naming.NamingException;
 import quandh.categories.CategoryDTO;
 import quandh.productstatuses.ProductStatusesDTO;
 import quandh.util.DBHelper;
 
+import javax.naming.NamingException;
+import java.io.Serializable;
+import java.sql.*;
+import java.util.ArrayList;
+
 /**
- *
  * @author PC_HONGQUAN
  */
 public class ProductDAO implements Serializable {
@@ -321,7 +317,7 @@ public class ProductDAO implements Serializable {
         return products;
     }
 
-    public ArrayList<ProductDTO> getProductBySortPriceHighToLow() throws ClassNotFoundException, SQLException , NamingException {
+    public ArrayList<ProductDTO> getProductBySortPriceHighToLow() throws ClassNotFoundException, SQLException, NamingException {
         Connection con = null;
         Statement stm = null;
         ResultSet rs = null;
@@ -379,7 +375,7 @@ public class ProductDAO implements Serializable {
         return products;
     }
 
-    public ArrayList<ProductDTO> getProductBySortLastInsert() throws ClassNotFoundException, SQLException, NamingException  {
+    public ArrayList<ProductDTO> getProductBySortLastInsert() throws ClassNotFoundException, SQLException, NamingException {
         Connection con = null;
         Statement stm = null;
         ResultSet rs = null;
@@ -437,7 +433,7 @@ public class ProductDAO implements Serializable {
         return products;
     }
 
-    public ArrayList<ProductDTO> getTop4Last() throws ClassNotFoundException, SQLException, NamingException  {
+    public ArrayList<ProductDTO> getTop4Last() throws ClassNotFoundException, SQLException, NamingException {
         Connection con = null;
         Statement stm = null;
         ResultSet rs = null;
@@ -495,7 +491,7 @@ public class ProductDAO implements Serializable {
         return products;
     }
 
-    public ArrayList<ProductDTO> getProductByName(String txtSearch) throws ClassNotFoundException, SQLException, NamingException  {
+    public ArrayList<ProductDTO> getProductByName(String txtSearch) throws ClassNotFoundException, SQLException, NamingException {
         Connection con = null;
         PreparedStatement stm = null;
         ResultSet rs = null;
@@ -553,7 +549,7 @@ public class ProductDAO implements Serializable {
         return products;
     }
 
-    public int totalProducts() throws ClassNotFoundException, SQLException, NamingException  {
+    public int totalProducts() throws ClassNotFoundException, SQLException, NamingException {
         int total = 0;
         Connection con = null;
         Statement stm = null;
@@ -587,7 +583,7 @@ public class ProductDAO implements Serializable {
         return total;
     }
 
-    public int countLowStokProducs() throws ClassNotFoundException, SQLException, NamingException  {
+    public int countLowStokProducs() throws ClassNotFoundException, SQLException, NamingException {
         int total = 0;
         Connection con = null;
         Statement stm = null;
@@ -661,7 +657,7 @@ public class ProductDAO implements Serializable {
         return false;
     }
 
-    public boolean deleteProduct(ProductDTO dto) throws ClassNotFoundException, SQLException , NamingException{
+    public boolean deleteProduct(ProductDTO dto) throws ClassNotFoundException, SQLException, NamingException {
         Connection con = null;
         PreparedStatement ps = null;
         int row = 0;
@@ -689,7 +685,7 @@ public class ProductDAO implements Serializable {
         return false;
     }
 
-    public boolean updateProduct(ProductDTO dto) throws ClassNotFoundException, SQLException , NamingException{
+    public boolean updateProduct(ProductDTO dto) throws ClassNotFoundException, SQLException, NamingException {
         Connection con = null;
         PreparedStatement ps = null;
         int row = 0;
@@ -721,7 +717,7 @@ public class ProductDAO implements Serializable {
         return false;
     }
 
-    public int getNumberPageTotal() throws ClassNotFoundException, SQLException , NamingException{
+    public int getNumberPageTotal() throws ClassNotFoundException, SQLException, NamingException {
         Connection con = null;
         Statement stm = null;
         ResultSet rs = null;
@@ -754,7 +750,8 @@ public class ProductDAO implements Serializable {
         return countPage;
 
     }
-     public int getNumberPageTotalAdmin() throws ClassNotFoundException, SQLException, NamingException {
+
+    public int getNumberPageTotalAdmin() throws ClassNotFoundException, SQLException, NamingException {
         Connection con = null;
         Statement stm = null;
         ResultSet rs = null;
@@ -883,5 +880,5 @@ public class ProductDAO implements Serializable {
         return products;
     }
 
-   
+
 }

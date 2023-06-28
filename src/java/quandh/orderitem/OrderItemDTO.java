@@ -9,7 +9,6 @@ import quandh.orders.OrdersDTO;
 import quandh.products.ProductDTO;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class OrderItemDTO {

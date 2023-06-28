@@ -6,13 +6,12 @@
 package quandh.products;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class ProductInsertError {
 
     private String skuIsExistError;
-    
+
     private String skuIsEmptyError;
     private String productNameIsEmptyError;
     private String imageIsEmptyError;

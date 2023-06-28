@@ -5,24 +5,20 @@
  */
 package quandh.orders;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Map;
-import javax.naming.NamingException;
 import quandh.account.AccountDTO;
 import quandh.cart.CartObj;
 import quandh.ordertatuses.OrderStatusesDTO;
 import quandh.products.ProductDTO;
 import quandh.util.DBHelper;
 
+import javax.naming.NamingException;
+import java.sql.*;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Map;
+
 /**
- *
  * @author PC_HONGQUAN
  */
 public class OrdersDAO {

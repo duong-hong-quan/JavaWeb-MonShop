@@ -5,11 +5,12 @@
  */
 package quandh.listener;
 
-import java.util.Properties;
+import quandh.util.PropertiesFileHelper;
+
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-import quandh.util.PropertiesFileHelper;
+import java.util.Properties;
 
 /**
  * Web application lifecycle listener.
@@ -23,10 +24,10 @@ public class ContextListener implements ServletContextListener {
         ServletContext context = sce.getServletContext();
         String siteMapLocation
                 = context.getInitParameter(
-                        "SITEMAP_PROPERTIES_FILE_LOCATION");
+                "SITEMAP_PROPERTIES_FILE_LOCATION");
         Properties siteMapProperty
                 = PropertiesFileHelper.getProperties(context,
-                        siteMapLocation);
+                siteMapLocation);
         context.setAttribute("SITE_MAP", siteMapProperty);
     }
 

@@ -6,7 +6,6 @@
 package quandh.categories;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class CategoryInsertError {
@@ -31,7 +30,7 @@ public class CategoryInsertError {
     public void setCategoryNameIsEmptyError(String categoryNameIsEmptyError) {
         this.categoryNameIsEmptyError = categoryNameIsEmptyError;
     }
-    
+
 
     public String getIdIsDuplicatedError() {
         return idIsDuplicatedError;

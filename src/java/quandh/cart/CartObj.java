@@ -5,18 +5,28 @@
  */
 package quandh.cart;
 
-import java.util.HashMap;
-import java.util.Map;
 import quandh.products.ProductDTO;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
- *
  * @author PC_HONGQUAN
  */
 public class CartObj {
 
     private Map<String, Integer> items;
     private Map<String, ProductDTO> products;
+
+    public static void main(String[] args) {
+        CartObj cartObj = new CartObj();
+        cartObj.addItemToCart("1", 1);
+        cartObj.addItemToCart("1", 1);
+        cartObj.addItemToCart("1", 1);
+        cartObj.addItemToCart("1", 1);
+        System.out.println(cartObj.getTotalItem()
+        );
+    }
 
     public Map<String, Integer> getItems() {
         return items;
@@ -102,7 +112,7 @@ public class CartObj {
                 items.put(id, quantity);//update cart items
             }
             result = true;
-        }// 
+        }//
         return result;
 
     }
@@ -150,15 +160,5 @@ public class CartObj {
             return this.products.get(sku);
         }
         return null;
-    }
-
-    public static void main(String[] args) {
-        CartObj cartObj = new CartObj();
-        cartObj.addItemToCart("1", 1);
-        cartObj.addItemToCart("1", 1);
-        cartObj.addItemToCart("1", 1);
-        cartObj.addItemToCart("1", 1);
-        System.out.println(cartObj.getTotalItem()
-        );
     }
 }

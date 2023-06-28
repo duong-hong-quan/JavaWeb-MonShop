@@ -5,11 +5,10 @@
  */
 package quandh.products;
 
-import quandh.productstatuses.ProductStatusesDTO;
 import quandh.categories.CategoryDTO;
+import quandh.productstatuses.ProductStatusesDTO;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class ProductDTO {
@@ -34,7 +33,7 @@ public class ProductDTO {
         this.status = status;
     }
 
-   
+
     public ProductDTO(String sku) {
         this.sku = sku;
     }

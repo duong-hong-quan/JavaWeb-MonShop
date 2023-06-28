@@ -6,7 +6,6 @@
 package quandh.ordertatuses;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class OrderStatusesDTO {
@@ -57,6 +56,6 @@ public class OrderStatusesDTO {
     public String toString() {
         return "OrderStatusesDTO{" + "id=" + id + ", status=" + status + '}';
     }
- 
-    
+
+
 }

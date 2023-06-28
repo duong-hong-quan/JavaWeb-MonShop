@@ -6,7 +6,6 @@
 package quandh.categories;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class CategoryDTO {
@@ -38,5 +37,5 @@ public class CategoryDTO {
     public String toString() {
         return "CategoryDTO{" + "id=" + id + ", category=" + category + '}';
     }
-    
+
 }

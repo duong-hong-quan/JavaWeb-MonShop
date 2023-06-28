@@ -9,7 +9,6 @@ import quandh.account.AccountDTO;
 import quandh.ordertatuses.OrderStatusesDTO;
 
 /**
- *
  * @author PC_HONGQUAN
  */
 public class OrdersDTO {
@@ -111,7 +110,6 @@ public class OrdersDTO {
     public String toString() {
         return "OrdersDTO{" + "id=" + id + ", account=" + account + ", orderDate=" + orderDate + ", total=" + total + ", OrderStatus=" + orderStatus + '}';
     }
-    
-    
-    
+
+
 }

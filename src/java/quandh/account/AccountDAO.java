@@ -5,23 +5,25 @@
  */
 package quandh.account;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import javax.naming.NamingException;
 import quandh.roles.RoleDTO;
 import quandh.util.DBHelper;
 
+import javax.naming.NamingException;
+import java.sql.*;
+import java.util.ArrayList;
+
 /**
- *
  * @author PC_HONGQUAN
  */
 public class AccountDAO {
 
     private ArrayList<AccountDTO> accountList;
+
+    public static void main(String[] args) throws SQLException, ClassNotFoundException, NamingException {
+        AccountDAO dao = new AccountDAO();
+        ArrayList<AccountDTO> accountList = dao.getAccountByName("a");
+        System.out.println(accountList);
+    }
 
     public ArrayList<AccountDTO> getAccountList() {
         return accountList;
@@ -120,7 +122,7 @@ public class AccountDAO {
                 con.close();
             }
         }
-                return this.accountList;
+        return this.accountList;
     }
 
     public AccountDTO checkLogin(AccountDTO acc) throws SQLException, ClassNotFoundException, NamingException {
@@ -343,11 +345,5 @@ public class AccountDAO {
         }
         return countPage;
 
-    }
-
-    public static void main(String[] args) throws SQLException, ClassNotFoundException, NamingException {
-        AccountDAO dao = new AccountDAO();
-        ArrayList<AccountDTO> accountList = dao.getAccountByName("a");
-        System.out.println(accountList);
     }
 }

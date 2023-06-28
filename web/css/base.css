@@ -5,12 +5,15 @@ body {
     font-family: "Quicksand", sans-serif !important;
     box-sizing: border-box;
 }
-input[type = "text"]{
+
+input[type = "text"] {
     font-size: 1.6rem !important;
 }
-input[type = "number"]{
+
+input[type = "number"] {
     font-size: 1.6rem !important;
 }
+
 header {
     padding: 1% 0;
 }
@@ -18,6 +21,7 @@ header {
 .header_pc {
     padding: 0;
 }
+
 .info {
     background-color: #fafafa;
     padding: 10px;
@@ -39,8 +43,10 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 .info-sub-rs {
 }
+
 .info-sub_item p {
     margin: 0 0 0 5px;
 }
@@ -93,6 +99,7 @@ header {
     display: block;
     font-size: 1.4rem;
 }
+
 .dropdown-content a:hover {
     text-decoration: none;
 }
@@ -209,29 +216,36 @@ header {
     text-decoration: none;
     /* background-color: #ccc; */
 }
-.navbar-nav__link-first{
+
+.navbar-nav__link-first {
     padding: 1rem 2rem 1rem 0;
 }
-.sidebar{
+
+.sidebar {
     margin-top: 2.5rem;
 }
-.list-siderbar-item{
+
+.list-siderbar-item {
     font-size: 2.5rem;
 }
-.siderbar-list{
+
+.siderbar-list {
     list-style: none;
     padding: 0 0 0 10px;
 }
-.sidebar-item{
+
+.sidebar-item {
     display: block;
     font-size: 1.5rem;
     color: #5a5858;
     margin: 10px 0;
 }
-.sidebar-item:hover{
+
+.sidebar-item:hover {
     text-decoration: none;
     color: rgb(119, 118, 118);
 }
+
 .btn-submit {
     margin-top: 40px;
     width: 100%;
@@ -258,13 +272,16 @@ footer {
     color: rgb(51, 51, 51);
     box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
 }
+
 .further h3 {
     font-size: 3rem;
     font-weight: bold;
 }
-.shopcontact{
+
+.shopcontact {
     /* padding: 0 10px; */
 }
+
 .shopcontact-desc__item {
     display: flex;
     align-items: center;
@@ -321,13 +338,16 @@ footer {
     color: #ccc;
     text-decoration: none;
 }
-.follow-us h3{
+
+.follow-us h3 {
     font-weight: bold;
     font-size: 3rem;
 }
-.follow-us-link{
+
+.follow-us-link {
     margin: 2rem 0;
 }
+
 .follow-us-link a {
     padding: 10px;
     display: inline-block;
@@ -335,9 +355,11 @@ footer {
     background-color: #000;
     margin-right: 0.5rem;
 }
+
 .follow-us-link a:hover {
     background-color: #3a3a3a;
 }
+
 .follow-us-link a i {
     width: 30px;
     height: 30px;
@@ -351,18 +373,18 @@ footer {
     display: inline-block;
     color: #fff;
     padding: 0 15px;
-    background-color:#000;
+    background-color: #000;
     min-height: 45px;
     line-height: 45px;
     margin-left: 2px;
     border-radius: 5px;
     font-size: 1.6rem;
 }
+
 .subcribe-btn:hover {
     background-color: #3b3b3b;
     cursor: pointer;
 }
-
 
 
 .avatar {
@@ -388,10 +410,12 @@ footer {
     width: 100px;
     height: 100px;
 }
-th{
+
+th {
     font-size: 1.6rem;
 }
-td{
+
+td {
     font-size: 1.6rem;
 }
 
@@ -399,10 +423,12 @@ td{
     display: flex;
     justify-content: flex-end !important;
 }
-.pagination{
+
+.pagination {
     font-size: 1.6rem;
 }
-.page-link{
+
+.page-link {
     color: #000 !important;
 }
 
@@ -419,21 +445,24 @@ td{
     padding: 35px;
     background-color: white;
 }
+
 /* Form */
-.title-form{
+.title-form {
     font-size: 2rem;
     text-align: center;
     display: block;
     font-weight: bold;
     color: #000;
 }
-.title-shop a{
+
+.title-shop a {
     font-size: 2rem;
     text-align: center;
     display: block;
     font-weight: bold;
     color: #000;
 }
+
 .mon-form p {
     font-size: 14px;
     padding: 0;
@@ -469,10 +498,11 @@ td{
     padding: 1rem;
 }
 
-.form-group span{
+.form-group span {
     font-size: 1.6rem;
 }
-.shop-btn_modify{
+
+.shop-btn_modify {
     border-radius: 5px;
     border: 1px solid #ccc;
 }

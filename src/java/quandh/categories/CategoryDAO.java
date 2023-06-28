@@ -5,18 +5,14 @@
  */
 package quandh.categories;
 
-import java.io.Serializable;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.ArrayList;
-import javax.naming.NamingException;
 import quandh.util.DBHelper;
 
+import javax.naming.NamingException;
+import java.io.Serializable;
+import java.sql.*;
+import java.util.ArrayList;
+
 /**
- *
  * @author PC_HONGQUAN
  */
 public class CategoryDAO implements Serializable {
